@@ -16,7 +16,7 @@ PATH = "C:\Program Files\chromedriver.exe"
 options = webdriver.ChromeOptions()
 
 options.add_experimental_option("prefs", {
-  "download.default_directory": r"C:\Users\xxx\Downloads",
+  "download.default_directory": r"C:\Users\xxx\Downloads\filestore",
   "download.prompt_for_download": False,
   "download.directory_upgrade": True,
   "safebrowsing.enabled": True
