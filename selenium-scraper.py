@@ -11,12 +11,12 @@ import utils
 
 
 # Path to the chromedriver.exe
-PATH = "C:\Program Files\chromedriver.exe"
+PATH = "..\chromedriver.exe"
 
 options = webdriver.ChromeOptions()
 
 options.add_experimental_option("prefs", {
-  "download.default_directory": r"C:\Users\xxx\Downloads\filestore",
+  "download.default_directory": "..\filestore",
   "download.prompt_for_download": False,
   "download.directory_upgrade": True,
   "safebrowsing.enabled": True
@@ -86,5 +86,5 @@ for i in range(1, len(cpt_options)):
     except:
         print("Error exporting")
 
-filestore = r"C:\Users\xxx\Downloads\filestore"
+filestore = "..\filestore"
 utils.parse_html_to_db(filestore)
