@@ -24,6 +24,7 @@ options.add_experimental_option("prefs", {
 
 driver = webdriver.Chrome(PATH, chrome_options=options)
 
+# replace with website url
 url = 'https://website.com/'
 
 driver.get(url)
