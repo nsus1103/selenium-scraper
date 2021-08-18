@@ -11,12 +11,12 @@ import utils
 
 
 # Path to the chromedriver.exe
-PATH = "C:\Program Files (x86)\chromedriver.exe"
+PATH = "C:\Program Files\chromedriver.exe"
 
 options = webdriver.ChromeOptions()
 
 options.add_experimental_option("prefs", {
-  "download.default_directory": r"C:\Users\nimblepants\Downloads\test",
+  "download.default_directory": r"C:\Users\xxx\Downloads",
   "download.prompt_for_download": False,
   "download.directory_upgrade": True,
   "safebrowsing.enabled": True
@@ -24,7 +24,7 @@ options.add_experimental_option("prefs", {
 
 driver = webdriver.Chrome(PATH, chrome_options=options)
 
-url = 'https://medicaidportal.aetna.com/propat/default.aspx?C=IwTepY8YV6h1kpN2NTDRMzC%2F%2BGPzgO%2FjH5LDJMzBdykvRBH3AdJSJcoN6n%2F8dmyPGSk5%2F4mkGHR1%0Aj%2BhVIBS2dwB0w0XxpWipNHj1jZV99GI%2FBO0TNaoWlgkekrY6yUgp72jVtKvLM5gxjxFtfaEmqtw1%0Ap4Pm%2BpXtddJNk0qD9Ekilih8EcgIZ6fR2zp8Zxuit6MxWZhdKhS5vL4N%2Bg8%2BqVpR6gxTp49TSL3o%0A6ITmc4ss%2FbySewx%2BLBl8FZeWXCFFMF3QYSYavYryojI0Kg5v%2FNQIcHBOaZifv5xp%2FvPNZmCd9Pgf%0AqlBJ4h1ViwNr4TQU6UTtG4tHxS220j8nyOiIyw%3D%3D'
+url = 'https://website.com/'
 
 driver.get(url)
 print(driver.title)
